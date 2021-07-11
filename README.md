@@ -1,2 +1,1 @@
-# DD_middle_project
- front-end
+# meddie_project

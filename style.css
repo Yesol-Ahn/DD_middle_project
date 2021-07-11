@@ -1,0 +1,732 @@
+/* Global Setting 
+페이지 전반에 사용되는 속성값들을 미리 지정*/
+:root {
+  /*Color*/
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+
+  /*Font Size*/
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /*Font weight*/
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /*Size*/
+  --size-border-radius: 4px;
+
+  /*Animation*/
+  --animation-duration: 300ms;
+}
+
+/*Universal tag 
+  CSS에 기본적으로 들어가는 속성을 변경*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 250;
+  font-family: "Open Sans", sans-serif;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Typography 
+  전반적으로 쓰여진 heading text에 대해서 먼저 스타일링주기*/
+
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 4px 0;
+}
+
+/*Section common*/
+.section {
+  padding: 70px;
+  text-align: center;
+}
+
+.section_container {
+  max-width: 1500px;
+  padding-left: 100px;
+  padding-top: 90px;
+  margin: 160px 160px 160px 160px;
+}
+
+/*navbar*/
+
+#navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  padding: 16px;
+  z-index: 1;
+  width: 100%;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: rgb(243, 242, 242);
+  padding: 8px;
+}
+
+.container-fluid {
+  z-index: 1;
+  margin-top: 0;
+  padding: 0;
+}
+
+.navbar_menu {
+  display: flex;
+  margin: 12px;
+  padding: 0;
+}
+
+.navbar_logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: #101010;
+}
+
+.navbar_menu img {
+  border: 16px;
+
+  margin-bottom: 10px;
+}
+
+#navbarDropdownMenuLink {
+  color: #101010;
+  padding: 20px;
+  margin: 0 4px;
+}
+
+.navbar_menu_item {
+  padding: 20px;
+  margin: 0 4px;
+  cursor: pointer;
+  color: #101010;
+  transition: all 350ms ease-in-out;
+}
+
+.navbar_menu_item.active {
+  border-radius: var(--size-border-radius);
+}
+
+.navbar_menu_item:hover {
+  transform: scale(1.1);
+}
+
+.dropdown-menu {
+  z-index: 1;
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: #101010;
+  display: none;
+}
+
+.main {
+  padding: 120px 200px 0px 200px;
+  background-color: white;
+}
+
+.slide__con {
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__tit {
+  font-size: 35px;
+  font-weight: 400;
+  padding: 10px 0 0;
+  margin-bottom: 5px;
+}
+.main__tail {
+  margin: 5px;
+  font-size: 14px;
+}
+
+.main__tag {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* insta */
+
+#innistar {
+    transition: opacity 2s ease-in-out;
+}
+.innistar {
+  padding-top: 70px;
+}
+
+.common__head {
+  margin-left: 50px;
+}
+
+.common__head-tit {
+  font-size: 90px;
+  font-weight: 600px;
+  margin: 0;
+}
+
+.common__head-tail {
+  font-size: 30px;
+  font-weight: 500px;
+  margin-left: 10px;
+}
+
+.common__head .common__head-tit:after {
+    content: '';
+    display: inline-block;
+    width: 130px;
+    height: 2px;
+    background: #222;
+    vertical-align: middle;
+}
+
+.innistar__head i {
+  font-size: 80px;
+  color: rgb(243, 211, 107);
+}
+
+.insta__in {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.project {
+  width: 280px;
+  height: 250;
+  margin: 3px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-light-white);
+}
+
+.insta_img {
+  align-self: center;
+ width : 100%;  height: 100%;
+}
+
+/*마우스를 올렸을 때만 설명이 나타나도록 효과주기*/
+.insta_description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 300ms ease-in;
+}
+
+.project:hover .insta_description {
+  transform: translateY(0px);
+  opacity: 0.8;
+}
+
+.insta_description h3 {
+  color: var(--color-white);
+}
+
+.insta_description h3:after {
+  content: "";
+  display: block;
+  position: relative;
+  margin-left: -12px;
+  margin-top: 8px;
+  width: 25px;
+  height: 2px;
+  background-color: var(--color-dark-white);
+  left: 50%;
+}
+
+.innistar__view {
+  margin-top: 14px;
+  margin-left: 550px;
+  transition: all 300ms ease-in-out;
+  color: rgb(34, 94, 34);
+}
+.view {
+  font-size: 30px;
+}
+
+.innistar__view:hover {
+  transform: translateY(17px);
+  color: rgb(44, 182, 44);
+}
+
+/* product */
+#product{
+margin: 400px 0px;
+transition: opacity 2s ease-in-out;
+}
+
+.product__img {
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 60px;
+    width: 100%;
+  text-align: center;
+  transform: translateY(0px);
+  transition: all 400ms ease-in-out;
+}
+
+.product__img:hover{
+    transform:translateY(-15px);
+
+}
+
+.product__container{
+    display: flex;
+    align-items: center;
+    
+} 
+
+
+.prodcuct__des{
+    text-align: center;
+    font-size: 30px;
+    margin-left: 50px;
+display: none;
+}
+
+.product__buy {
+    margin-top: 14px;
+    margin-left: 550px;
+    transition: all 300ms ease-in-out;
+    color: rgb(187, 131, 27);
+  }
+ .buy{
+    font-size: 30px;
+}
+
+.product__buy:hover {
+    transform: translateX(20px);
+    color: rgb(255, 191, 72);
+    text-shadow: rgb(214, 214, 108) 1px 0 10px;
+  }
+  
+
+/* news */
+.news {
+  margin: 350px 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.news__container img {
+  margin: 40px 0px 60px 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.news__sub {
+  display: flex;
+  justify-content: space-around;
+}
+
+.news__sub-box img {
+  padding: 30px;
+  transition: all 400ms ease-in;
+}
+
+.news__sub-box img:hover {
+  transform: scale(1.1);
+}
+
+/* store */
+.store {
+  display: flex;
+  background-color: #e9f2d3;
+  text-align: center;
+  margin-top: 100px;
+  transition: opacity 2s ease-in-out;
+}
+
+.store__box {
+  padding: 120px;
+  margin-left: 200px;
+}
+
+.store__box-title {
+  color: #024138;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.store__box-tail {
+}
+
+.store__box-btn {
+  margin-top: 40px;
+}
+
+.store__box-btn a {
+  color: black;
+  text-decoration: none;
+}
+
+/* footer */
+.site-footer {
+  background-color: #024138;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.site-footer hr.small {
+  margin: 20px 0;
+}
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.site-footer a {
+  color: #737373;
+}
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #737373;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links.inline li {
+  display: inline-block;
+}
+.site-footer .social-icons {
+  text-align: right;
+}
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+.copyright-text {
+  margin: 0;
+}
+
+/* review */
+
+#review{
+    transition: opacity 2s ease-in-out;
+}
+
+#iphone{
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+    
+    
+}
+
+.screen {
+    position: absolute;
+    left: 95px;
+    top: 182px;
+    width: 319px;
+    height: 568px;
+    overflow: hidden;
+  }
+  
+  header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 44px;
+    overflow: hidden;
+    background: #f8f8f8;
+    z-index: 2;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    position: relative;
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    line-height: 44px;
+    text-align: center;
+    z-index: 2;
+    font-weight: 300;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25);
+  }
+  
+  .content-blurred {
+    margin-top: 44px;
+    padding: 0 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    filter: blur(10px);
+    opacity: 0.35;
+    z-index: 1;
+  }
+  
+  .content-blurred .content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .content-wrapper {
+    position: relative;
+    padding: 0 1rem;
+    height: 100%;
+    overflow: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .content-wrapper .content {
+    margin-top: 44px;
+  }
+  
+  .content {
+    display: block;
+    padding-top: 1em;
+  }
+  
+  .messages {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .messages li {
+    display: block;
+    float: left;
+    clear: both;
+    max-width: 65%;
+    margin: 0 0 1rem 0;
+    padding: 0;
+  }
+  
+  .messages li:nth-child(even) {
+    float: right;
+  }
+  
+  .messages li:nth-child(even) img {
+    float: right;
+  }
+  
+  .messages p {
+    border-radius: 0.75rem;
+    background: #e6e5eb;
+    color: #383641;
+    padding: 0.6875rem;
+    margin: 0;
+    font-size: 0.875rem;
+  }
+  
+  .messages li:nth-child(even) p {
+    background: #158ffe;
+    color: #fff;
+  }
+  
+  .messages img {
+    display: block;
+    max-width: 65%;
+    border-radius: 0.75rem;
+  }
+  
+  .phone {
+    position: relative;
+    width: 509px;
+    height: 931px;
+    margin : 20px auto; 
+    background-repeat: no-repeat;
+    background-image: url("imgs/iphone.png");
+    background-position: 0.75cm 21mm;
+
+
+
+/* @media */
+@media (max-width: 1350px) {
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar_menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center;
+  }
+}
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
