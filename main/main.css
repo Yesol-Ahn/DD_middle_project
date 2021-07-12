@@ -43,7 +43,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: white
 }
 
 ul {
@@ -56,6 +56,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  
 }
 
 /* Typography 
@@ -141,7 +142,6 @@ p {
 
 .navbar_menu img {
   border: 16px;
-
   margin-bottom: 10px;
 }
 
@@ -155,8 +155,11 @@ p {
   padding: 20px;
   margin: 0 4px;
   cursor: pointer;
-  color: #101010;
   transition: all 350ms ease-in-out;
+}
+
+.navbar_menu_item a{
+  color: #101010;
 }
 
 .navbar_menu_item.active {
@@ -165,6 +168,7 @@ p {
 
 .navbar_menu_item:hover {
   transform: scale(1.1);
+  color: #101010;
 }
 
 .dropdown-menu {
@@ -631,7 +635,7 @@ display: none;
     height: 931px;
     margin : 20px auto; 
     background-repeat: no-repeat;
-    background-image: url("imgs/iphone.png");
+    background-image: url("/imgs/iphone.png");
     background-position: 0.75cm 21mm;
 
 
