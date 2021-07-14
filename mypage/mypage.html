@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>my page</title>
+  <script src="https://use.typekit.net/lkh0ago.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<link rel="stylesheet" href="mypage.css">
+<script defer src="mypage.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id='settings' ontouchstart>
+  <input checked class='nav' name='nav' type='radio'>
+  <span class='nav'>Profile</span>
+  <input class='nav' name='nav' type='radio'>
+  <span class='nav'>Account</span>
+  <input class='nav' name='nav' type='radio'>
+  <span class='nav'>Order</span>
+  <input class='nav' name='nav' type='radio'>
+  <span class='nav'>Wish</span>
+  <main class='content'>
+    <section id='profile'>
+      <form>
+        <ul>
+          <li class='large padding avatar'>
+            <span style=" background-image: url('/imgs/avartar.png');"></span>
+            <div>
+              <fieldset class='material-checkbox'>
+                <div>
+                  <input checked type='checkbox'>
+                  <div class='check'>
+                    <span>
+                      <svg viewBox='0 0 24 24'>
+                        <g>
+                          <line x1='4.5' x2='9.24' y1='12.5' y2='17.24'></line>
+                          <line x1='9.24' x2='19.76' y1='17.24' y2='6.73'></line>
+                        </g>
+                        <g>
+                          <line x1='4.5' x2='9.24' y1='12.5' y2='17.24'></line>
+                          <line x1='9.24' x2='19.76' y1='17.24' y2='6.73'></line>
+                        </g>
+                      </svg>
+                    </span>
+                    <label>Use Gravatar</label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class='material-button'>
+                <div>
+                  <button>Select File</button>
+                </div>
+              </fieldset>
+            </div>
+          </li>
+          <li>
+            <fieldset class='material'>
+              <div>
+                <input required type='text' value='Gabrielle Wee'>
+                <label>Name</label>
+                <hr>
+              </div>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset class='material'>
+              <div>
+                <input required type='text'>
+                <label>Location</label>
+                <hr>
+              </div>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset class='material'>
+              <div>
+                <input required type='text'>
+                <label>Title</label>
+                <hr>
+              </div>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset class='material'>
+              <div>
+                <input required type='text'>
+                <label>Website</label>
+                <hr>
+              </div>
+            </fieldset>
+          </li>
+          <li class='large'>
+            <fieldset class='material'>
+              <div>
+                <input required type='text'>
+                <label>About</label>
+                <hr>
+              </div>
+            </fieldset>
+          </li>
+          <li class='large padding'>
+            <fieldset class='material-button center'>
+              <div>
+                <input class='save' type='submit' value='Save'>
+              </div>
+             
+            </fieldset>
+          </li>
+        </ul>
+      </form>
+    </section>
+    <section id='account'>
+      <form>
+        <ul>
+          <li>
+            <fieldset class='material'>
+              <div>
+                <input required type='text' value='email@domain.com'>
+                <label>Email</label>
+                <hr>
+              </div>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset class='material'>
+              <div>
+                <input required type='text'>
+                <label>Username</label>
+                <hr>
+              </div>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset class='material'>
+              <div>
+                <input required type='password'>
+                <label>Password</label>
+                <hr>
+              </div>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset class='material'>
+              <div>
+                <input required type='password'>
+                <label>Confirm Password</label>
+                <hr>
+              </div>
+            </fieldset>
+          </li>
+          <li class='padding'>
+            <fieldset class='material-button'>
+              <div>
+                <button class='connect gh connected'>
+                  <span>Unlink Github Account</span>
+                </button>
+              </div>
+            </fieldset>
+          </li>
+          <li class='padding'>
+            <fieldset class='material-button'>
+              <div>
+                <button class='connect tw'>
+                  <span>Link Twitter Account</span>
+                </button>
+              </div>
+            </fieldset>
+          </li>
+          <li class='padding'>
+            <fieldset class='material-button'>
+              <div>
+                <button class='connect fb'>
+                  <span>Link Facebook Account</span>
+                </button>
+              </div>
+            </fieldset>
+          </li>
+          <li class='padding'>
+            <fieldset class='material-button'>
+              <div>
+                <button class='connect li'>
+                  <span>Link LinkedIn Account</span>
+                </button>
+              </div>
+            </fieldset>
+          </li>
+          <li class='large padding'>
+            <fieldset class='material-button center'>
+              <div>
+                <input class='save' type='submit' value='Save'>
+              </div>
+              
+              <p class="withdraw">Don`t use membership?</p>
+            
+            </fieldset>
+          </li>
+        </ul>
+      </form>
+    </section>
+
+    <section class='upcoming' id='privacy'>
+    </section>
+
+    <section class='upcoming' id='advanced'>
+      
+      <div class="container">
+        <h1>My Wish List</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="carousel slide multi-item-carousel" id="theCarousel">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?perth,australia" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?fremantle,australia" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?west-australia" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?perth" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?quokka,perth" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?margaretriver,australia" class="img-responsive"></a></div>
+                </div>
+
+
+                <!-- add  more items here -->
+                <!-- Example item start:  -->
+                <div class="item">
+                  <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?perth,australia&r=7" class="img-responsive"></a></div>
+                </div>
+                <!--  Example item end -->
+
+                
+              </div>
+              <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+              <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>
