@@ -133,6 +133,8 @@
     margin: 12px;
     padding: 0;
   }
+
+ 
   
   .navbar_logo {
     font-size: var(--font-medium);
@@ -143,7 +145,7 @@
   .navbar_menu img {
     border: 16px;
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 100px;
   }
   
   #navbarDropdownMenuLink {
