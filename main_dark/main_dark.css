@@ -36,9 +36,11 @@
 }
 
 body {
+ 
   padding-top: 250;
   font-family: "Open Sans", sans-serif;
   cursor: default;
+ 
 }
 
 a {
@@ -94,9 +96,11 @@ p {
 .section {
   padding: 70px;
   text-align: center;
+  
 }
 
 .section_container {
+  background-color: #00363a;
   max-width: 1500px;
   padding-left: 100px;
   padding-top: 90px;
@@ -118,11 +122,12 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: rgb(243, 242, 242);
+  background-color: #00363a;
   padding: 8px;
 }
 
 .container-fluid {
+  
   z-index: 1;
   margin-top: 0;
   padding: 0;
@@ -130,24 +135,28 @@ p {
 
 .navbar_menu {
   display: flex;
+  
   margin: 12px;
   padding: 0;
+}
+
+.navbar_menu_item i{
+  color: #f8ffd7;
 }
 
 .navbar_logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  color: #101010;
+  color:#f8ffd7;
 }
 
 .navbar_menu img {
   border: 16px;
   margin-bottom: 10px;
-  margin-left: 20px;
 }
 
 #navbarDropdownMenuLink {
-  color: #101010;
+  color: #f8ffd7;
   padding: 20px;
   margin: 0 4px;
 }
@@ -157,10 +166,11 @@ p {
   margin: 0 4px;
   cursor: pointer;
   transition: all 350ms ease-in-out;
+  color: #f8ffd7;
 }
 
 .navbar_menu_item a{
-  color: #101010;
+  color: #f8ffd7;
   text-decoration: none;
 }
 
@@ -170,12 +180,11 @@ p {
 
 .navbar_menu_item:hover {
   transform: scale(1.1);
-  color: #101010;
+  color: #f8ffd7;
 }
 
 .navbar_menu_item a:hover{
-  color: #101010;
-  text-decoration: none;
+  color: #f8ffd7;
 }
 
 .dropdown-menu {
@@ -187,13 +196,13 @@ p {
   top: 24px;
   right: 32px;
   font-size: 24px;
-  color: #101010;
+  color:#f8ffd7;
   display: none;
 }
 
 .main {
   padding: 120px 200px 0px 200px;
-  background-color: white;
+  background-color: #00363a;
 }
 
 .slide__con {
@@ -207,15 +216,18 @@ p {
   font-weight: 400;
   padding: 10px 0 0;
   margin-bottom: 5px;
+  color:#f8ffd7;
 }
 .main__tail {
   margin: 5px;
   font-size: 14px;
+  color:#f8ffd7;
 }
 
 .main__tag {
   margin-top: 20px;
   font-size: 16px;
+  color:#f8ffd7;
 }
 
 /* insta */
@@ -491,8 +503,8 @@ display: none;
   display: inline-block;
 }
 .site-footer .social-icons {
-  display: flex;
   text-align: right;
+  display: flex;
 }
 .site-footer .social-icons a {
   width: 40px;
