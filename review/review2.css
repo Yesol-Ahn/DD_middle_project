@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "STIX Two Math", serif;
+  font-weight: 300;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #f4f8f2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 60px;
+  font-weight: serif;
+  text-shadow: 1px 1px 2px rgb(31, 58, 20);
+  margin-top: 30px;
+}
+
+h1 i {
+  color: rgb(233, 154, 64);
+  font-size: 50px;
+}
+
+h2 {
+  color: #f4f8f2;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 10px;
+}
+
+button {
+  background-color: rgb(255, 253, 220);
+  color: #a86c11;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 60px;
+}
+
+.user_btn {
+  text-align: center;
+  font-size: 15px;
+}
+
+.user_btn i {
+  font-size: 20px;
+  padding: 10px;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1564050988016-522e96f274c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80");
+}
+
+.product {
+  margin-bottom: 60px;
+}
+
+.star {
+  text-align: center;
+  color: rgb(219, 188, 48);
+}
+
+.item {
+  border-radius: 10px;
+  background-color: white;
+  padding: auto;
+  margin-top: 25px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.wrapper {
+  padding-left: 20px;
+}
+
+.masonry {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.masonry .item {
+  width: 300px;
+  float: left;
+  background: f9f1e5;
+  border: 2px solid#c1e4a1;
+  border-color: #e3f8d0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.author {
+  text-align: center;
+  text-transform: uppercase;
+  background: rgb(65, 119, 33);
+  background: rgb(139, 198, 88);
+  background: rgb(226, 110, 43);
+  background: linear-gradient(
+    90deg,
+    rgba(226, 110, 43, 1) 0%,
+    rgba(255, 141, 0, 1) 4%,
+    rgba(231, 170, 0, 1) 53%,
+    rgba(255, 141, 0, 1) 95%,
+    rgba(226, 110, 43, 1) 100%
+  );
+  color: #fff;
+  margin-top: 0;
+  padding: 1rem 0;
+  border-bottom: 2px solid #333;
+  border-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.7;
+}
+
+.mark {
+  position: absolute;
+  color: #003d33;
+  font-size: 2rem;
+  left: 1rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.25em;
+}
+
+.quote {
+  padding-right: 1rem;
+  padding-left: 4rem;
+  font-style: italic;
+}
+
+footer {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.next_btn:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
