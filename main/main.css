@@ -518,6 +518,8 @@
       transition: opacity 2s ease-in-out;
   }
   
+
+
   #iphone{
       font-family: "Helvetica Neue", "Helvetica", sans-serif;
       font-size: 1rem;
@@ -525,8 +527,6 @@
       padding: 0;
       background: #fff;
       overflow: hidden;
-      
-      
   }
   
   .screen {
@@ -618,10 +618,6 @@
       float: right;
     }
     
-    .messages li:nth-child(even) img {
-      float: right;
-    }
-    
     .messages p {
       border-radius: 0.75rem;
       background: #e6e5eb;
@@ -634,12 +630,6 @@
     .messages li:nth-child(even) p {
       background: #158ffe;
       color: #fff;
-    }
-    
-    .messages img {
-      display: block;
-      max-width: 65%;
-      border-radius: 0.75rem;
     }
     
     .phone {
