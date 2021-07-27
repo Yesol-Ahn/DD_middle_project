@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>product manager1</title>
+        <link rel="stylesheet" href="product_m.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="menu.js"></script>
+        <!-- partial -->
+        <script defer="defer" src="product.js"></script>
+        <script src="https://kit.fontawesome.com/20c5a1496b.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <!-- partial:index.partial.html -->
+        <link
+            href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700'
+            rel='stylesheet'
+            type='text/css'>
+        <div id="wrapper">
+            <div class="cart-icon-top"></div>
+
+            <div class="cart-icon-bottom"></div>
+
+            <div id="checkout">
+                Buy Now
+            </div>
+
+            <div id="header">
+                <ul>
+                    <li>
+                        <a href="/main_dark/main_dark.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="">REVIEW</a>
+                    </li>
+                    <li>
+                        <a href="">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="/mypage/mypage.html">MY PAGE</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="sidebar">
+                <h3>CART</h3>
+                <div id="cart">
+                    <span class="empty">No items in cart.</span>
+                </div>
+
+                <h3>Category</h3>
+
+                <div class="footer">
+                    <input type="text" class="footer__input">
+                    <button class="footer__btn">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+
+                <!-- input categories -->
+                <div class="checklist categories">
+                    <ul class="items">
+                        <li class="item__row">
+                            <div class="item"><input class="item__name" type="text" onclick="" value="Skincare"/>
+                                <button class="item__delete">
+                                    <i class="fas fa-minus-circle"></i>
+                                </button>
+                                <button>저장</button>
+                            </div>
+                        </li>
+                        <li class="item__row">
+                            <div class="item"><input class="item__name" type="text" onclick="" value="Cleansing"/>
+                                <button class="item__delete">
+                                    <i class="fas fa-minus-circle"></i>
+                                </button>
+                                <button>저장</button>
+                            </div>
+                        </li>
+                        <li class="item__row">
+                            <div class="item"><input class="item__name" type="text" onclick="" value="Makeup"/>
+                                <button class="item__delete">
+                                    <i class="fas fa-minus-circle"></i>
+                                </button>
+                                <button>저장</button>
+                            </div>
+                        </li>
+                        <li class="item__row">
+                            <div class="item"><input class="item__name" type="text" onclick="" value="Body/Hair"/>
+                                <button class="item__delete">
+                                    <i class="fas fa-minus-circle"></i>
+                                </button>
+                                <button>저장</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 여기까징 -->
+
+                <h3>Line</h3>
+                <div class="checklist colors">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span style="background:#222"></span>Black
+                            </a>
+                            <button class="categories_btn">
+                                <i class="fas fa-minus-circle"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span style="background:#094d0c"></span>Avocado
+                            </a>
+                            <button class="categories_btn">
+                                <i class="fas fa-minus-circle"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span style="background:#379c72"></span>Tea tree
+                            </a>
+                            <button class="categories_btn">
+                                <i class="fas fa-minus-circle"></i>
+                            </button>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="product_m2.html">
+                                <span style="background:#f79858"></span>Orange
+                            </a>
+                            <button class="categories_btn">
+                                <i class="fas fa-minus-circle"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span style="background:#b27ef8"></span>Grape
+                            </a>
+                            <button class="categories_btn">
+                                <i class="fas fa-minus-circle"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span style="background:#f56060"></span>Pomegranate
+                            </a>
+                            <button class="categories_btn">
+                                <i class="fas fa-minus-circle"></i>
+                            </button>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="grid-selector">
+            <div id="grid-menu">
+                View:
+                <ul>
+                    <li class="largeGrid">
+                        <a href=""></a>
+                    </li>
+                    <li class="smallGrid">
+                        <a class="active" href=""></a>
+                    </li>
+                </ul>
+            </div>
+
+            Showing 1–9 of 36 product
+        </div>
+
+        <div id="grid">
+
+            <div class="product">
+                <div class="make3D">
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1610733867869-bd60674ca8b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
+                            alt=""/>
+
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                        <div class="stats">
+
+                            <div class="stats-container">
+                                <span class="product_price">9,000</span>
+
+                                <span class="product_name">Tea tree serum
+                                </span>
+                                <p>Skin care</p>
+                                <div class="product-options">
+                                    <strong>STOCK</strong>
+                                    <!-- counting button -->
+                                    <br>
+                                    <form class="stock">
+                                        <input
+                                            class="counting__btn"
+                                            type="button"
+                                            onclick="descrementValue()"
+                                            value="-"/>
+                                        <input type="text" id="number" value="20"/>
+                                        <input
+                                            class="counting__btn"
+                                            type="button"
+                                            onclick="incrementValue()"
+                                            value="+"/>
+                                        <br>
+                                        <div class="counting__input">
+                                            <button >재고수정</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="make3D">
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80"
+                            alt=""/>
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                        <div class="stats">
+                            <a href="/detail/detail2_m.html">
+                                <div class="stats-container">
+                                    <span class="product_price">10,000</span>
+                                    <span class="product_name">Tea tree ample</span>
+                                    <p>Skin care</p>
+                                    <div class="product-options">
+                                        <strong>STOCK</strong>
+                                        <!-- counting button -->
+                                        <br>
+                                        <form class="stock">
+                                            <input
+                                                class="counting__btn"
+                                                type="button"
+                                                onclick="descrementValue()"
+                                                value="-"/>
+                                            <input type="text" id="number" value="20"/>
+                                            <input
+                                                class="counting__btn"
+                                                type="button"
+                                                onclick="incrementValue()"
+                                                value="+"/>
+                                            <br>
+                                            <div class="counting__input">
+                                                <button >재고수정</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="make3D">
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1612198692294-c7a12ce17770?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
+                            alt=""/>
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                        <div class="stats">
+                            <a href="/detail/detail1_m.html">
+                                <div class="stats-container">
+                                    <span class="product_price">13,000</span>
+                                    <span class="product_name">Tea tree Skin</span>
+                                    <p>Skin care</p>
+                                    <div class="product-options">
+                                        <strong>STOCK</strong>
+                                        <!-- counting button -->
+                                        <br>
+                                        <form class="stock">
+                                            <input
+                                                class="counting__btn"
+                                                type="button"
+                                                onclick="descrementValue()"
+                                                value="-"/>
+                                            <input type="text" id="number" value="20"/>
+                                            <input
+                                                class="counting__btn"
+                                                type="button"
+                                                onclick="incrementValue()"
+                                                value="+"/>
+                                            <br>
+                                            <div class="counting__input">
+                                                <button >재고수정</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="make3D">
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1609097164673-7cfafb51b926?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80"
+                            alt=""/>
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                        <a href="/detail/detail3_m.html">
+                            <div class="stats">
+                                <div class="stats-container">
+                                    <span class="product_price">6,000</span>
+                                    <span class="product_name">Tea tree suncare</span>
+                                    <p>Skin care</p>
+                                    <div class="product-options">
+                                        <strong>STOCK</strong>
+                                    <!-- counting button -->
+                                    <br>
+                                    <form class="stock">
+                                        <input
+                                            class="counting__btn"
+                                            type="button"
+                                            onclick="descrementValue()"
+                                            value="-"/>
+                                        <input type="text" id="number" value="20"/>
+                                        <input
+                                            class="counting__btn"
+                                            type="button"
+                                            onclick="incrementValue()"
+                                            value="+"/>
+                                        <br>
+                                        <div class="counting__input">
+                                            <button >재고수정</button>
+                                        </div>
+                                    </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="make3D">
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1567433517180-d3e56cf7f81e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                            alt=""/>
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                        <div class="stats">
+                            <div class="stats-container">
+                                <span class="product_price">8,000</span>
+                                <span class="product_name">Wood lotion</span>
+                                <p>Skin care</p>
+                                <div class="product-options">
+                                    <strong>STOCK</strong>
+                                    <!-- counting button -->
+                                    <br>
+                                    <form class="stock">
+                                        <input
+                                            class="counting__btn"
+                                            type="button"
+                                            onclick="descrementValue()"
+                                            value="-"/>
+                                        <input type="text" id="number" value="20"/>
+                                        <input
+                                            class="counting__btn"
+                                            type="button"
+                                            onclick="incrementValue()"
+                                            value="+"/>
+                                        <br>
+                                        <div class="counting__input">
+                                            <button >재고수정</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="make3D">
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1614859095259-afa49fb8a8f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+                            alt=""/>
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                        <div class="stats">
+                            <div class="stats-container">
+                                <span class="product_price">23,000</span>
+                                <span class="product_name">Wood serum</span>
+                                <p>Skin care</p>
+                                <div class="product-options">
+                                    <strong>STOCK</strong>
+                                    <!-- counting button -->
+                                    <br>
+                                    <form class="stock">
+                                        <input
+                                            class="counting__btn"
+                                            type="button"
+                                            onclick="descrementValue()"
+                                            value="-"/>
+                                        <input type="text" id="number" value="20"/>
+                                        <input
+                                            class="counting__btn"
+                                            type="button"
+                                            onclick="incrementValue()"
+                                            value="+"/>
+                                        <br>
+                                        <div class="counting__input">
+                                            <button >재고수정</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="make3D">
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1556229010-aa3f7ff66b24?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+                            alt=""/>
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                        <div class="stats">
+                            <div class="stats-container">
+                                <span class="product_price">7,000</span>
+                                <span class="product_name">Clay mask</span>
+                                <p>Make</p>
+                                <div class="product-options">
+                                    <strong>STOCK</strong>
+                                    <!-- counting button -->
+                                    <br>
+                                    <form class="stock">
+                                        <input
+                                            class="counting__btn"
+                                            type="button"
+                                            onclick="descrementValue()"
+                                            value="-"/>
+                                        <input type="text" id="number" value="20"/>
+                                        <input
+                                            class="counting__btn"
+                                            type="button"
+                                            onclick="incrementValue()"
+                                            value="+"/>
+                                        <br>
+                                        <div class="counting__input">
+                                            <button >재고수정</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="make3D">
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img
+                            src="https://images.unsplash.com/photo-1618330834871-dd22c2c226ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+                            alt=""/>
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                        <div class="stats">
+                            <div class="stats-container">
+                                <span class="product_price">12,000</span>
+                                <span class="product_name">Wood ample</span>
+                                <p>Skin care</p>
+                                <div class="product-options">
+                                    <strong>STOCK</strong>
+                                    <!-- counting button -->
+                                    <br>
+                                    <form class="stock">
+                                        <input
+                                            class="counting__btn"
+                                            type="button"
+                                            onclick="descrementValue()"
+                                            value="-"/>
+                                        <input type="text" id="number" value="20"/>
+                                        <input
+                                            class="counting__btn"
+                                            type="button"
+                                            onclick="incrementValue()"
+                                            value="+"/>
+                                        <br>
+                                        <div class="counting__input">
+                                            <button >재고수정</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
